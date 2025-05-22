@@ -1,0 +1,54 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #b8b5dd;
+}
+
+.btn{
+    width: 200px;
+    height: 60px;
+    background: #ffc107;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.btn::before{
+    color: white;
+    font-family: sans-serif;
+    content: 'Hover Me';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    transition: all 0.5s;
+    
+    
+}
+
+.btn:hover::before{
+    top: -30px;
+
+}
+
+.btn::after{
+    font-family: 'Ionicons';
+    content: '\f141';
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 140%;
+    font-size: 40px;
+    transition: all 0.5s;
+
+}
+.btn:hover::after{
+    top :50%;
+}
