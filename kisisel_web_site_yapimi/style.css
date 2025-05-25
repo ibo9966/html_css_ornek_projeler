@@ -1,0 +1,71 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(resimler/arkaplan.jpg);
+    background-size: cover; /* Arka planı sayfaya göre kırpıp doldurur */
+    background-repeat: no-repeat; /* Tekrar etmesini engeller */
+    background-position: center; /* Ortalar */
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+
+.box{
+    width: 450px;
+    background: #6b5858;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.box img{
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.box img:hover{
+    transform: scale(0.9);
+}
+
+.box h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.box h5{
+    font-size: 20px;
+    letter-spacing: 3px;
+
+}
+
+.box p{
+    text-align: justify;
+}
+
+.box ul {
+    margin: 0;
+    padding: 0;
+}
+.box ul li{
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+
+}
+.box ul li a{
+    color: #fff;
+    font-size: 60px;
+    transition: all ease-in-out 250 ms;
+}
+
+.box ul li a:hover{
+    color: #b9b9b9;
+}
