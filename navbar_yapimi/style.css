@@ -10,7 +10,7 @@ body {
     background-repeat: no-repeat; /* Tekrar etmesini engeller */
     background-position: center; /* Ortalar */
     font-family: sans-serif;
-     min-height: 100vh;
+    min-height: 100vh;
 }
 image{
     width: 100%;
