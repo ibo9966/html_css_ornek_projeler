@@ -1,0 +1,180 @@
+/* Font ayarı */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Genel sıfırlama */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9f2f9);
+    color: #444;
+    padding: 2rem 1rem;
+}
+
+/* Başlık kutusu */
+.intro {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 2rem auto;
+}
+
+.intro h1 {
+    font-size: 2rem;
+    color: #111;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Kartları tutan alan */
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+}
+
+/* Kart genel görünümü */
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    width: 300px;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Kart başlıkları */
+.card-header {
+    height: 5rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+    color: white;
+}
+
+.header-basic {
+    background: linear-gradient(135deg, cyan, #06c766);
+}
+
+.header-standart {
+    background: linear-gradient(135deg, #b202c9, #cf087c);
+}
+
+.header-premium {
+    background: linear-gradient(135deg, #eea300, #ee5700);
+}
+
+/* Kart gövdesi */
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-body p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card-element-container {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    line-height: 1.8;
+}
+
+/* Butonlar */
+.btn {
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-basic {
+    background: linear-gradient(135deg, cyan, #06c766);
+}
+
+.btn-standart {
+    background: linear-gradient(135deg, #b202c9, #cf087c);
+}
+
+.btn-premium {
+    background: linear-gradient(135deg, #eea300, #ee5700);
+}
+
+/* Mobil uyum */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    .intro {
+        padding: 1.5rem;
+    }
+
+    .intro h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+}
+
+.site-footer {
+    background-color: #222;
+    color: #eee;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+}
+
+.site-footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #00d8a7;
+}
+
+.site-footer p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.page-wrapper {
+    min-height: calc(100vh - 160px); /* footer yüksekliği kadar boşluk bırak */
+    min-height: auto;
+}
