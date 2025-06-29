@@ -1,0 +1,6 @@
+Ürünlerimizin adı Teklif al olarak değişecek
+Her ürün içerisinde whatsapptan bilgi al yanında TEKLİF AL butonu gelecek. Sayfada Form cıkacak ve form'un içinde form gönder butonu olacak
+anasayfadaki teklif al butonu kalkacak
+Anasayfakida iletişim altında adres eklenecek
+anasayfa butonların altına çalışılan firmaların adı sağa doğru kayan ve kendini tekrar eden logolar eklenecek
+YL sigorta logosu yapılacak
