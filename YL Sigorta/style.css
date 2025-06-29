@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-image: url(resimler/arkaplan2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    
+}
+
+/*header start*/
+
+header{
+    height: 100px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+header nav .logo a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+    
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+nav ul li a:hover{
+    color: #0ba2c0;
+    
+      
+}
+
+nav .menu{
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+
+}
+
+nav .menu .menu-button{
+    color: #0ba2c0;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 12px 24px;
+    border-radius: 56px;
+    transition: all .2s ease;
+}
+
+
+nav .menu .menu-button:hover{
+    background-color: #0ba2c0;
+    color: white;
+    
+}
+/*header end*/
+/*section start*/
+.content{
+    color: white;
+    height: calc(100vh -100px);
+    padding-top: 150px;
+}
+
+.content h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.content p{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 32px;
+}
+.content .links{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    column-gap: 16px;
+
+}
+
+.content .links a{
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 56px;
+    transition: all .25s ease-in;
+    
+}
+
+.content .links a:hover{
+    background-color: #0ba2c0;
+    color: white;
+    
+}
+
+
+/*section end*/
+
+
+/* responsive start */
+@media(max-width:576px){
+    .container{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+
+    }
+
+    .menu ul{
+        column-gap: 10px;
+    }
+    .menu .menu-button{
+        display: none;
+    }
+
+    .content{
+        padding-top: 50px;
+    }
+    .content h1{
+        font-size: 30px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+    .content .links {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    .content .links a{
+        font-size: 14px;
+        width: 90%;
+        
+    }
+}
+/* responsive end   */
+
+
+#sari {
+    background-color: navy; /* lacivert arka plan */
+    color: yellow;          /* sarı yazı */
+    padding: 0 8px;
+    border-radius: 8px;
+}
+
+#lacivert {
+    background-color: yellow; /* sarı arka plan */
+    color: navy;              /* lacivert yazı */
+    padding: 0 8px;
+    border-radius: 8px;
+}
+
+/* iletisim css  start */
+
+.contact-section {
+    color: white;
+    padding-top: 100px;
+    text-align: center;
+    min-height: calc(100vh - 100px);
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    border-radius: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+    backdrop-filter: blur(5px);
+}
+
+.whatsapp-button {
+    display: inline-block;
+    margin-top: 24px;
+    background-color: #25D366;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 56px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #1DA851;
+}
+
+
+/* iletisim css  start */
+
+
+/*sosyal medya start*/
+
+.sosyal-medya-wrapper {
+    position: relative;
+    padding-top: 12px;
+}
+
+.sosyal-medya-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    padding: 12px;
+    z-index: 999;
+    backdrop-filter: blur(4px);
+}
+
+.sosyal-medya-links a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.sosyal-medya-links a:hover {
+    background-color: #0ba2c0;
+    border-radius: 6px;
+}
+
+.sosyal-medya-wrapper:hover .sosyal-medya-links {
+    display: flex;
+}
+
+/*sosyal medya finish*/
+
+/* urunlerimiz start */
+
+.urunler-section {
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+    min-height: calc(100vh - 100px);
+}
+
+.urunler-section h1 {
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.urun-card {
+    background-color: rgba(255, 255, 255, 0.08);
+    margin-bottom: 24px;
+    padding: 24px;
+    border-radius: 16px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(4px);
+}
+
+.urun-card h2 {
+    color: #ffd700;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.urun-card p {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.whatsapp-info-button {
+    margin-top: 16px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 56px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-info-button:hover {
+    background-color: #1DA851;
+}
+
+
+/* urunlerimiz end */
