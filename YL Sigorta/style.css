@@ -8,7 +8,7 @@
 }
 body{
     font-family: "Poppins", sans-serif;
-    background-image: url(resimler/arkaplan2.jpg);
+    background-image: url(resimler/arkaplan3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -238,7 +238,8 @@ nav .menu .menu-button:hover{
 
 .sosyal-medya-wrapper {
     position: relative;
-    padding-top: 12px;
+    /*padding-top: 12px;*/
+    
 }
 
 .sosyal-medya-links {
