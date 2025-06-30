@@ -344,6 +344,22 @@ nav .menu .menu-button:hover{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
+.close-video-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
 /*iframe end*/
 
 /*logostart*/
