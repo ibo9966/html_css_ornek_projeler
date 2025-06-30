@@ -11,6 +11,7 @@ body{
     background-image: url(resimler/arkaplan4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: auto
     
 
 }
@@ -492,16 +493,28 @@ nav .menu .menu-button:hover{
   text-align: left;
   color: black;
   font-family: "Poppins", sans-serif;
+  max-height: 90vh; /* ekranın %90'ını geçmesin */
+  overflow-y: auto; /* dikeyde scroll çıksın */
+  padding-right: 10px; /* scrollbar üstüne yazı binmesin diye boşluk */
 }
 
 .popup-content input {
   width: 100%;
   padding: 12px;
-  margin-top: 6px;
+  margin-top: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
   font-family: inherit;
 }
+
+.popup-content label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px; /* 👈 yazıyla input arası boşluk */
+  font-weight: 500;
+}
+
+
 
 .popup-content button {
   margin-top: 14px;
@@ -525,4 +538,121 @@ nav .menu .menu-button:hover{
   cursor: pointer;
   color: red;
 }
+
+#zorunlu{
+    margin-top: 20px;
+}
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px; /* Butonlar arası boşluk */
+  flex-wrap: wrap; /* Gerekirse alta geçsin ama yan yana dursun */
+  margin-top: 5px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap; /* Yazı bölünmesin */
+  margin-bottom: 10px;
+
+}
+
+
 /*teklifal sayfasındaki teklifal end*/
+
+/*footer start*/
+.footer {
+  background-color: #464646;
+  color: #f0f0f0;
+  padding: 5px 2px 2px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #00bcd4;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 6px;
+}
+
+.footer-section a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+  color: #00e5ff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 13px;
+  border-top: 1px solid #000000;
+  padding-top: 2px;
+  color: #ccc;
+}
+
+.footer-bottom .developer {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.footer-bottom .developer a {
+  margin-left: 8px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-bottom .developer a:hover {
+  color: #00e5ff;
+}
+
+.footer-bottom {
+  background-color: #464646; /* senin seçtiğin koyu gri */
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  border-top: 1px solid #000000;
+}
+
+.footer-bottom .developer a {
+  margin: 0 6px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer-bottom .developer a:hover {
+  color: #1da1f2; /* isteğe bağlı: hover rengi */
+}
+
+/*footer end*/
