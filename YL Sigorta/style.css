@@ -113,7 +113,7 @@ nav .menu .menu-button:hover{
 .content .links a{
     background-color: white;
     padding: 20px;
-    width: 280px;
+    width: 180px;
     color: black;
     text-align: center;
     font-size: 18px;
@@ -317,6 +317,7 @@ nav .menu .menu-button:hover{
 .whatsapp-info-button {
     margin-top: 16px;
     background-color: #25D366;
+    text-decoration: none;
     color: white;
     border: none;
     padding: 12px 20px;
