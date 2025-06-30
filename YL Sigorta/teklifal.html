@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ürünlerimiz - Yılmaz Sigorta</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teklif Al - Yılmaz Sigorta</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header class="container">
     <nav>
       <div class="logo">
         <a href="index.html">
-          <img src="resimler/keremyilmaz2logo.png" alt="logo" class="logo-icon">
+          <img src="resimler/keremyilmaz2logo.png" alt="logo" class="logo-icon" />
           YLSigorta®
         </a>
       </div>
@@ -28,78 +28,54 @@
 
   <section class="container urunler-section">
     <h1>Ürünlerimiz</h1>
-
-    <!-- Örnek 1 -->
+    <!-- Tüm ürün kartlarını içeriyor -->
     <div class="urun-card">
-      <h2>Trafik Sigortası</h2>
-      <p>Zorunlu Mali Mesuliyet Sigortasıdır.</p>
-      <p>Karayollarında seyreden ancak gerçekleşen kazada suçu olmayan 3. şahısların araçlarına ait hasarları kanunun öngördüğü oranda karşılayan bir sigortadır.</p>
+      <h2>Trafik Sigortası</h2><p>Zorunlu mali mesuliyet sigortasıdır.</p>
       <button class="whatsapp-info-button" onclick="openWhatsapp('Trafik Sigortası')">💬 WhatsApp’tan Bilgi Al</button>
       <button class="teklif-al-button" onclick="openTeklifForm('Trafik Sigortası')">📄 Teklif Al</button>
     </div>
-
-    <!-- Örnek 2 -->
     <div class="urun-card">
-      <h2>Kasko</h2>
-      <p>Araç sahibinin kendi aracını teminat altına alır.</p>
-      <p>Kasko, çalınma, yanma, kaza ve doğal afetlere karşı aracı güvenceye alır.</p>
+      <h2>Kasko</h2><p>Aracı hırsızlık, yangın ve kazaya karşı korur.</p>
       <button class="whatsapp-info-button" onclick="openWhatsapp('Kasko')">💬 WhatsApp’tan Bilgi Al</button>
       <button class="teklif-al-button" onclick="openTeklifForm('Kasko')">📄 Teklif Al</button>
     </div>
-
-    <!-- Sağlık Sigortası -->
     <div class="urun-card">
-      <h2>Sağlık Sigortası</h2>
-      <p>Yatarak ve ayakta tedavi, check-up gibi sağlık hizmetlerini kapsar.</p>
+      <h2>Sağlık Sigortası</h2><p>Ayakta/yatarak tedavi, ilaç, check‑up masraflarını karşılar.</p>
       <button class="whatsapp-info-button" onclick="openWhatsapp('Sağlık Sigortası')">💬 WhatsApp’tan Bilgi Al</button>
       <button class="teklif-al-button" onclick="openTeklifForm('Sağlık Sigortası')">📄 Teklif Al</button>
     </div>
-
     <div class="urun-card">
-      <h2>DASK</h2>
-      <p>Deprem sonrası oluşan hasarları karşılayan zorunlu sigorta türüdür.</p>
+      <h2>DASK</h2><p>Deprem kaynaklı hasarları güvence altına alır.</p>
       <button class="whatsapp-info-button" onclick="openWhatsapp('DASK')">💬 WhatsApp’tan Bilgi Al</button>
       <button class="teklif-al-button" onclick="openTeklifForm('DASK')">📄 Teklif Al</button>
     </div>
-
     <div class="urun-card">
-      <h2>Konut Sigortası</h2>
-      <p>Yangın, hırsızlık gibi risklere karşı evinizi güvence altına alır.</p>
+      <h2>Konut Sigortası</h2><p>Yangın, hırsızlık, su baskını gibi ev risklerini kapsar.</p>
       <button class="whatsapp-info-button" onclick="openWhatsapp('Konut Sigortası')">💬 WhatsApp’tan Bilgi Al</button>
       <button class="teklif-al-button" onclick="openTeklifForm('Konut Sigortası')">📄 Teklif Al</button>
     </div>
-
     <div class="urun-card">
-      <h2>İşyeri Sigortası</h2>
-      <p>İş yerinizdeki ekipman ve eşyaları koruma altına alır.</p>
+      <h2>İşyeri Sigortası</h2><p>İş yerindeki eşyalarınızı ve ekipmanlarınızı korur.</p>
       <button class="whatsapp-info-button" onclick="openWhatsapp('İşyeri Sigortası')">💬 WhatsApp’tan Bilgi Al</button>
       <button class="teklif-al-button" onclick="openTeklifForm('İşyeri Sigortası')">📄 Teklif Al</button>
     </div>
-
     <div class="urun-card">
-      <h2>Allrisk Sigortası</h2>
-      <p>İstisnalar dışında tüm riskleri kapsayan geniş sigorta paketidir.</p>
+      <h2>Allrisk Sigortası</h2><p>İstisna dışındaki tüm riskleri kapsayan geniş teminat.</p>
       <button class="whatsapp-info-button" onclick="openWhatsapp('Allrisk Sigortası')">💬 WhatsApp’tan Bilgi Al</button>
       <button class="teklif-al-button" onclick="openTeklifForm('Allrisk Sigortası')">📄 Teklif Al</button>
     </div>
-
     <div class="urun-card">
-      <h2>Nakliyat Sigortası</h2>
-      <p>Mallarınızın taşınma sırasında uğrayabileceği zararları karşılar.</p>
+      <h2>Nakliyat Sigortası</h2><p>Eşya taşınırken oluşacak hasarları karşılar.</p>
       <button class="whatsapp-info-button" onclick="openWhatsapp('Nakliyat Sigortası')">💬 WhatsApp’tan Bilgi Al</button>
       <button class="teklif-al-button" onclick="openTeklifForm('Nakliyat Sigortası')">📄 Teklif Al</button>
     </div>
-
     <div class="urun-card">
-      <h2>Seyahat Sağlık Sigortası</h2>
-      <p>Yurt dışı seyahatlerde sağlık güvencesi sunar, vize için zorunlu olabilir.</p>
+      <h2>Seyahat Sağlık Sigortası</h2><p>Yurtdışı sağlık giderlerini teminat eder, vizeye uygun.</p>
       <button class="whatsapp-info-button" onclick="openWhatsapp('Seyahat Sağlık Sigortası')">💬 WhatsApp’tan Bilgi Al</button>
       <button class="teklif-al-button" onclick="openTeklifForm('Seyahat Sağlık Sigortası')">📄 Teklif Al</button>
     </div>
-
     <div class="urun-card">
-      <h2>Yabancı Sağlık Sigortası</h2>
-      <p>Türkiye'de yaşayan yabancıların ikamet izni alabilmesi için gereklidir.</p>
+      <h2>Yabancı Sağlık Sigortası</h2><p>Türkiye’de yaşayan yabancılar için sağlık güvencesi.</p>
       <button class="whatsapp-info-button" onclick="openWhatsapp('Yabancı Sağlık Sigortası')">💬 WhatsApp’tan Bilgi Al</button>
       <button class="teklif-al-button" onclick="openTeklifForm('Yabancı Sağlık Sigortası')">📄 Teklif Al</button>
     </div>
@@ -111,58 +87,106 @@
       <span class="close-btn" onclick="closeForm()">&times;</span>
       <h2 id="form-baslik">Teklif Formu</h2>
       <form id="teklif-form" onsubmit="return handleSubmit(event)">
-        <label for="isim">Ad Soyad:</label>
-        <input type="text" id="isim" name="isim" placeholder="Ad Soyad Giriniz..." required
-               pattern="^[A-Za-zÇçĞğİıÖöŞşÜü\s]+$" title="Sadece harf ve boşluk giriniz.">
-
-        <label for="telefon">Telefon:</label>
-        <input type="tel" id="telefon" name="telefon" placeholder="+90 5XX XXX XXXX" required
-               pattern="^\+90\s5\d{2}\s\d{3}\s\d{4}$" title="Format: +90 5XX XXX XXXX">
-
-        <label for="plaka" id="plaka-label">Araç Plakası:</label>
-        <input type="text" id="plaka" name="plaka" placeholder="34ABC123" required>
-
+        <div id="form-fields"></div>
+        <p>* Zorunlu alanlar doldurulmalıdır.</p>
         <button type="submit">Gönder</button>
       </form>
     </div>
   </div>
 
   <script>
-    function openWhatsapp(urunAdi) {
-      const mesaj = `Sizi ${urunAdi} hakkında bilgi almak için WhatsApp'a yönlendiriyoruz...`;
-      alert(mesaj);
-      setTimeout(() => {
-        window.open("https://wa.me/905050705500", "_blank");
-      }, 1000);
+    function openWhatsapp(urun) {
+      alert(`${urun} hakkında bilgi almak için WhatsApp’a yönlendiriliyorsunuz.`);
+      setTimeout(() => window.open("https://wa.me/905050705500", "_blank"), 800);
     }
 
-    function openTeklifForm(urunAdi) {
-      document.getElementById('popup-form').classList.remove('hidden');
-      document.getElementById('form-baslik').innerText = urunAdi + ' Teklif Formu';
+    function openTeklifForm(urun) {
+      document.getElementById("popup-form").classList.remove("hidden");
+      document.getElementById("form-baslik").innerText = `${urun} Teklif Formu`;
 
-      const plakaLabel = document.getElementById('plaka-label');
-      const plakaInput = document.getElementById('plaka');
+      const fieldsMap = {
+        "Trafik Sigortası": [
+          ["Ad Soyad","text","isim","Ad Soyad","required pattern=\"^[A-Za-zÇçĞğİıÖöŞşÜü\\s]+$\""],
+          ["T.C. Kimlik No","text","tc","11 haneli T.C. Kimlik No","required pattern=\"^[0-9]{11}$\""],
+          ["Telefon","tel","telefon","+90 5XX XXX XXXX","required pattern=\"^\\+90\\s5\\d{2}\\s\\d{3}\\s\\d{4}$\""],
+          ["Ruhsat Belge Seri No","text","ruhsat","Örn: ABC123456","required"],
+          ["Adres","text","adres","Adres Giriniz","required"],
+          ["Şehir","text","sehir","Örn: İstanbul","required"],
+          ["E‑posta","email","email","example@mail.com","required pattern=\"^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$\""]
+        ],
+        "Kasko": [
+          ["Ad Soyad","text","isim","Ad Soyad","required pattern=\"^[A-Za-zÇçĞğİıÖöŞşÜü\\s]+$\""],
+          ["T.C. Kimlik No","text","tc","11 haneli T.C. Kimlik No","required pattern=\"^[0-9]{11}$\""],
+          ["Telefon","tel","telefon","+90 5XX XXX XXXX","required pattern=\"^\\+90\\s5\\d{2}\\s\\d{3}\\s\\d{4}$\""],
+          ["Ruhsat Belge Seri No","text","ruhsat","Örn: ABC123456","required"],
+          ["Adres","text","adres","Adres Giriniz","required"],
+          ["Şehir","text","sehir","Örn: İstanbul","required"],
+          ["E‑posta","email","email","example@mail.com","required pattern=\"^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$\""]
+        ],
+        "Sağlık Sigortası": [
+          ["Ad Soyad","text","isim","Ad Soyad","required pattern=\"^[A-Za-zÇçĞğİıÖöŞşÜü\\s]+$\""],
+          ["T.C. Kimlik No","text","tc","11 haneli T.C. Kimlik No","required pattern=\"^[0-9]{11}$\""],
+          ["Telefon","tel","telefon","+90 5XX XXX XXXX","required pattern=\"^\\+90\\s5\\d{2}\\s\\d{3}\\s\\d{4}$\""],
+          ["Şehir","text","sehir","Örn: İstanbul","required"],
+          ["E‑posta","email","email","example@mail.com","required pattern=\"^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$\""]
+        ],
+        "DASK": [
+          ["Ad Soyad","text","isim","Ad Soyad","required pattern=\"^[A-Za-zÇçĞğİıÖöŞşÜü\\s]+$\""],
+          ["T.C. Kimlik No","text","tc","11 haneli T.C. Kimlik No","required pattern=\"^[0-9]{11}$\""],
+          ["Telefon","tel","telefon","+90 5XX XXX XXXX","required pattern=\"^\\+90\\s5\\d{2}\\s\\d{3}\\s\\d{4}$\""],
+          ["Bina Yaşı","number","bina","","required"],
+          ["Metrekare","number","metrekare","","required"],
+          ["İlçe","text","ilce","Örn: Kadıköy","required"],
+          ["Şehir","text","sehir","Örn: İstanbul","required"]
+        ],
+        "Konut Sigortası": [
+          ["Ev Sahibi","radio","durum","EvSahibi","required"],
+          ["Kiracı","radio","durum","Kiraci",""],
+          ["Ad Soyad","text","isim","Ad Soyad","required pattern=\"^[A-Za-zÇçĞğİıÖöŞşÜü\\s]+$\""],
+          ["T.C. Kimlik No","text","tc","11 haneli T.C. Kimlik No","required pattern=\"^[0-9]{11}$\""],
+          ["Telefon","tel","telefon","+90 5XX XXX XXXX","required pattern=\"^\\+90\\s5\\d{2}\\s\\d{3}\\s\\d{4}$\""],
+          ["Metrekare","number","m2","","required"],
+          ["Eşya Değeri (TL)","number","esya","","required"],
+          ["Adres","text","adres","Adres Giriniz","required"],
+          ["Şehir","text","sehir","Örn: İstanbul","required"]
+        ],
+        "Seyahat Sağlık Sigortası": [
+          ["Ad Soyad","text","isim","Ad Soyad","required pattern=\"^[A-Za-zÇçĞğİıÖöŞşÜü\\s]+$\""],
+          ["T.C. Kimlik No","text","tc","11 haneli T.C. Kimlik No","required pattern=\"^[0-9]{11}$\""],
+          ["Telefon","tel","telefon","+90 5XX XXX XXXX","required pattern=\"^\\+90\\s5\\d{2}\\s\\d{3}\\s\\d{4}$\""],
+          ["Gidilecek Ülke","text","ulke","Ülke Giriniz","required"],
+          ["Gün Sayısı","number","gun","","required"],
+          ["E‑posta","email","email","example@mail.com","required pattern=\"^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$\""]
+        ],
+        "Yabancı Sağlık Sigortası": [
+          ["Ad Soyad","text","isim","Ad Soyad","required pattern=\"^[A-Za-zÇçĞğİıÖöŞşÜü\\s]+$\""],
+          ["T.C. Kimlik No","text","tc","11 haneli T.C. Kimlik No","required pattern=\"^[0-9]{11}$\""],
+          ["Telefon","tel","telefon","+90 5XX XXX XXXX","required pattern=\"^\\+90\\s5\\d{2}\\s\\d{3}\\s\\d{4}$\""],
+          ["Şehir","text","sehir","Örn: İstanbul","required"],
+          ["E‑posta","email","email","example@mail.com","required pattern=\"^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$\""]
+        ]
+      };
 
-      if (urunAdi.includes("Konut") || urunAdi.includes("İşyeri")) {
-        plakaLabel.innerText = "Adres:";
-        plakaInput.placeholder = "Örn: İstanbul, Bahçelievler...";
-      } else if (urunAdi.includes("Sağlık") || urunAdi.includes("Yabancı")) {
-        plakaLabel.innerText = "T.C. Kimlik Numarası:";
-        plakaInput.placeholder = "Örn: 12345678901";
-      } else {
-        plakaLabel.innerText = "Araç Plakası:";
-        plakaInput.placeholder = "Örn: 34ABC123";
-      }
+      const form = document.getElementById("form-fields");
+      form.innerHTML = "";
+      (fieldsMap[urun] || []).forEach(f=>{
+        const [lbl, type, name, ph, attrs] = f;
+        if(type==="radio"){
+          form.innerHTML += `<label><input type="radio" name="${name}" value="${ph}" ${attrs}/> ${lbl}</label><br>`;
+        } else {
+          form.innerHTML += `<label>* ${lbl}:</label><input type="${type}" name="${name}" placeholder="${ph}" ${attrs}/><br>`;
+        }
+      });
     }
 
     function closeForm() {
-      document.getElementById('popup-form').classList.add('hidden');
+      document.getElementById("popup-form").classList.add("hidden");
     }
 
-    function handleSubmit(event) {
-      event.preventDefault();
+    function handleSubmit(e) {
+      e.preventDefault();
       alert("✅ Teşekkürler! Size en kısa sürede geri dönüş yapılacaktır.");
-      document.getElementById("teklif-form").reset();
+      e.target.reset();
       closeForm();
       return false;
     }

@@ -10,5 +10,5 @@ YL sigorta logosu yapılacak ++
 
 --------
 2.divi düzenle
-iframe'li videoya çarpı koy ve isteyen kapatsın
+iframe'li videoya çarpı koy ve isteyen kapatsın+++
 batudan ogrendiğim→fotoları svg'ye çevir arka planı kaldır bogaz gözükere devam etsin

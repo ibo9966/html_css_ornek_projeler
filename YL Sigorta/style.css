@@ -8,9 +8,11 @@
 }
 body{
     font-family: "Poppins", sans-serif;
-    background-image: url(resimler/arkaplan3.jpg);
+    background-image: url(resimler/arkaplan4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    
+
 }
 
 .container{
@@ -83,11 +85,12 @@ nav .menu .menu-button:hover{
 }
 /*header end*/
 /*section start*/
-.content{
+.content {
     color: white;
-    height: calc(100vh -100px);
-    padding-top: 150px;
+    min-height: calc(100vh - 100px - 250px); /* Marquee ve video boyunu düşüyoruz */
+    padding-top: 50px;
 }
+
 
 .content h1{
     font-size: 50px;
@@ -187,7 +190,7 @@ nav .menu .menu-button:hover{
 
 .contact-section {
     color: white;
-    padding-top: 100px;
+    padding-top: 20px;
     text-align: center;
     min-height: calc(100vh - 100px);
 }
@@ -231,7 +234,7 @@ nav .menu .menu-button:hover{
 }
 
 
-/* iletisim css  start */
+/* iletisim css  end */
 
 
 /*sosyal medya start*/
@@ -276,7 +279,7 @@ nav .menu .menu-button:hover{
 /* teklifal start */
 
 .urunler-section {
-    padding-top: 100px;
+    padding-top: 20px;
     color: white;
     text-align: center;
     min-height: calc(100vh - 100px);
@@ -393,8 +396,10 @@ nav .menu .menu-button:hover{
 }
 
 .firma-logosu-track {
-    display: inline-block;
-    animation: kaydir 60s linear infinite;
+  display: inline-block;
+  animation: kaydir 20s linear infinite;
+  /* Gerekirse süreyi arttır azıcık */
+  white-space: nowrap;
 }
 
 .firma-logosu-track img {
@@ -410,12 +415,12 @@ nav .menu .menu-button:hover{
 }
 
 @keyframes kaydir {
-    from {
-        transform: translateX(0%);
-    }
-    to {
-        transform: translateX(-50%);
-    }
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 /*firmalar end*/
