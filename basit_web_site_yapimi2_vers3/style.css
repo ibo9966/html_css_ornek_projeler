@@ -1,30 +1,26 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
 body{
     background-image: url(resimler/arkaplan.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: sans-serif;
-
 }
 
 .menu-bar{
-    background: #5b717b;
+    background-color: #5cb569;
     text-align: center;
 }
 
 .menu-bar ul{
     display: inline-flex;
     list-style: none;
-
-
 }
 
-.menu-bar ul li {
+.menu-bar ul li{
     width: 150px;
     margin: 15px;
     padding: 15px;
@@ -32,18 +28,16 @@ body{
 
 .menu-bar ul li a{
     text-decoration: none;
-    color: #fff;
+}
+
+.fa-solid{
+    margin-right: 8px;
 }
 
 .active, .menu-bar ul li:hover{
     background-color: red;
     border-radius: 20px;
 }
-
-.menu-bar .fa-solid{
-    margin-right: 8px;
-}
-
 .sub-menu-1{
     display: none;
 }
@@ -51,16 +45,14 @@ body{
 .menu-bar ul li:hover .sub-menu-1{
     display: block;
     position: absolute;
-    background: #5b717b;
+    background: #5cb569;
     margin-top: 15px;
     margin-left: -15px;
     font-size: 10px;
-
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul{
     display: block;
-    
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul li{
@@ -75,11 +67,11 @@ body{
 .menu-bar ul li:hover .sub-menu-1 ul li a:hover{
     color: yellow;
 }
+
 .fa-caret-right{
-    font-size: 14px;
-    color: #fff;
     float: right;
-    
+    color: #fff;
+    font-size: 14px;
 }
 
 .sub-menu-2{
@@ -87,10 +79,9 @@ body{
 }
 
 .hover-me:hover .sub-menu-2{
-   display: block; 
-   position: absolute;
-   margin-top: -40px;
-   margin-left: 140px;
-   background: #5b717b;
-
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: #5cb569;
 }
