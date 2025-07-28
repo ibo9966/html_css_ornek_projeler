@@ -19,7 +19,13 @@
         </a>
       </div>
 
-      <div class="menu">
+      <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="menu" id="mobileMenu">
         <ul>
           <li><a href="index.html">Anasayfa</a></li>
           <li><a href="teklifal.html">Teklif Al</a></li>
@@ -41,8 +47,8 @@
   <!--section start-->
   <section class="container content">
     <h1>Sigortacılık Güven İşidir <span id="sari">Yılmaz</span> <span id="lacivert">Sigorta</span></h1>
-    <p>“İhtiyacınıza uygun çözümlerle hayatı güvence altına alıyoruz. Aileniz, aracınız, eviniz... Hepsi emin ellerde.”</p>
-    <p>“Uzman ekibimizle, hızlı ve kişisel sigorta çözümleri sunuyoruz. Güvencenizi bizimle başlatın.”</p>
+    <p>"İhtiyacınıza uygun çözümlerle hayatı güvence altına alıyoruz. Aileniz, aracınız, eviniz... Hepsi emin ellerde."</p>
+    <p>"Uzman ekibimizle, hızlı ve kişisel sigorta çözümleri sunuyoruz. Güvencenizi bizimle başlatın."</p>
 
     <div class="links">
       <a href="#">Trafik Sigortası</a>
@@ -104,6 +110,35 @@
         videoKutusu.style.display = "none";
       }
     }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById("mobileMenu");
+      const toggle = document.querySelector(".mobile-menu-toggle");
+      
+      menu.classList.toggle("active");
+      toggle.classList.toggle("active");
+    }
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        const menu = document.getElementById("mobileMenu");
+        const toggle = document.querySelector(".mobile-menu-toggle");
+        menu.classList.remove("active");
+        toggle.classList.remove("active");
+      });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      const menu = document.getElementById("mobileMenu");
+      const toggle = document.querySelector(".mobile-menu-toggle");
+      
+      if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+        menu.classList.remove("active");
+        toggle.classList.remove("active");
+      }
+    });
   </script>
 
 <footer class="footer">

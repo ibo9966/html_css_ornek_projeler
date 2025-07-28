@@ -18,7 +18,14 @@
                     YLSigorta®
                 </a>
             </div>
-            <div class="menu">
+            
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu" id="mobileMenu">
                 <ul>
                     <li><a href="index.html">Anasayfa</a></li>
                     <li><a href="teklifal.html">Teklif Al</a></li>
@@ -61,6 +68,37 @@
             </iframe>
         </div>
     </section>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById("mobileMenu");
+            const toggle = document.querySelector(".mobile-menu-toggle");
+            
+            menu.classList.toggle("active");
+            toggle.classList.toggle("active");
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const menu = document.getElementById("mobileMenu");
+                const toggle = document.querySelector(".mobile-menu-toggle");
+                menu.classList.remove("active");
+                toggle.classList.remove("active");
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            const menu = document.getElementById("mobileMenu");
+            const toggle = document.querySelector(".mobile-menu-toggle");
+            
+            if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+                menu.classList.remove("active");
+                toggle.classList.remove("active");
+            }
+        });
+    </script>
 
     <footer>
   <div class="footer-bottom">

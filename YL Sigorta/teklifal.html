@@ -19,7 +19,14 @@
           YLSigorta®
         </a>
       </div>
-      <div class="menu">
+      
+      <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="menu" id="mobileMenu">
         <ul>
           <li><a href="index.html">Anasayfa</a></li>
           <li><a href="teklifal.html">Teklif Al</a></li>
@@ -37,7 +44,7 @@
       <p>Zorunlu mali mesuliyet sigortasıdır.</p>
       <a href="https://wa.me/905050705500" target="_blank" class="whatsapp-info-button"
         onclick="return confirmWhatsapp('Trafik Sigortası')">
-        💬 WhatsApp’tan Bilgi Al
+        💬 WhatsApp'tan Bilgi Al
       </a>
       <button class="teklif-al-button" onclick="openTeklifForm('Trafik Sigortası')">📄 Teklif Al</button>
     </div>
@@ -46,7 +53,7 @@
       <p>Aracı hırsızlık, yangın ve kazaya karşı korur.</p>
       <a href="https://wa.me/905050705500" target="_blank" class="whatsapp-info-button"
         onclick="return confirmWhatsapp('Kasko')">
-        💬 WhatsApp’tan Bilgi Al
+        💬 WhatsApp'tan Bilgi Al
       </a>
       <button class="teklif-al-button" onclick="openTeklifForm('Kasko')">📄 Teklif Al</button>
     </div>
@@ -55,7 +62,7 @@
       <p>Ayakta/yatarak tedavi, ilaç, check‑up masraflarını karşılar.</p>
       <a href="https://wa.me/905050705500" target="_blank" class="whatsapp-info-button"
         onclick="return confirmWhatsapp('Sağlık Sigortası')">
-        💬 WhatsApp’tan Bilgi Al
+        💬 WhatsApp'tan Bilgi Al
       </a>
       <button class="teklif-al-button" onclick="openTeklifForm('Sağlık Sigortası')">📄 Teklif Al</button>
     </div>
@@ -64,7 +71,7 @@
       <p>Deprem kaynaklı hasarları güvence altına alır.</p>
       <a href="https://wa.me/905050705500" target="_blank" class="whatsapp-info-button"
         onclick="return confirmWhatsapp('DASK')">
-        💬 WhatsApp’tan Bilgi Al
+        💬 WhatsApp'tan Bilgi Al
       </a>
       <button class="teklif-al-button" onclick="openTeklifForm('DASK')">📄 Teklif Al</button>
     </div>
@@ -73,7 +80,7 @@
       <p>Yangın, hırsızlık, su baskını gibi ev risklerini kapsar.</p>
       <a href="https://wa.me/905050705500" target="_blank" class="whatsapp-info-button"
         onclick="return confirmWhatsapp('Konut Sigortası')">
-        💬 WhatsApp’tan Bilgi Al
+        💬 WhatsApp'tan Bilgi Al
       </a>
       <button class="teklif-al-button" onclick="openTeklifForm('Konut Sigortası')">📄 Teklif Al</button>
     </div>
@@ -82,7 +89,7 @@
       <p>İş yerindeki eşyalarınızı ve ekipmanlarınızı korur.</p>
       <a href="https://wa.me/905050705500" target="_blank" class="whatsapp-info-button"
         onclick="return confirmWhatsapp('İşyeri Sigortası')">
-        💬 WhatsApp’tan Bilgi Al
+        💬 WhatsApp'tan Bilgi Al
       </a>
       <button class="teklif-al-button" onclick="openTeklifForm('İşyeri Sigortası')">📄 Teklif Al</button>
     </div>
@@ -91,7 +98,7 @@
       <p>İstisna dışındaki tüm riskleri kapsayan geniş teminat.</p>
       <a href="https://wa.me/905050705500" target="_blank" class="whatsapp-info-button"
         onclick="return confirmWhatsapp('Allrisk Sigortası')">
-        💬 WhatsApp’tan Bilgi Al
+        💬 WhatsApp'tan Bilgi Al
       </a>
       <button class="teklif-al-button" onclick="openTeklifForm('Allrisk Sigortası')">📄 Teklif Al</button>
     </div>
@@ -100,7 +107,7 @@
       <p>Eşya taşınırken oluşacak hasarları karşılar.</p>
       <a href="https://wa.me/905050705500" target="_blank" class="whatsapp-info-button"
         onclick="return confirmWhatsapp('Nakliyat Sigortası')">
-        💬 WhatsApp’tan Bilgi Al
+        💬 WhatsApp'tan Bilgi Al
       </a>
       </button>
       <button class="teklif-al-button" onclick="openTeklifForm('Nakliyat Sigortası')">📄 Teklif Al</button>
@@ -110,17 +117,17 @@
       <p>Yurtdışı sağlık giderlerini teminat eder, vizeye uygun.</p>
       <a href="https://wa.me/905050705500" target="_blank" class="whatsapp-info-button"
         onclick="return confirmWhatsapp('Seyahat Sağlık Sigortası')">
-        💬 WhatsApp’tan Bilgi Al
+        💬 WhatsApp'tan Bilgi Al
       </a>
       </button>
       <button class="teklif-al-button" onclick="openTeklifForm('Seyahat Sağlık Sigortası')">📄 Teklif Al</button>
     </div>
     <div class="urun-card">
       <h2>Yabancı Sağlık Sigortası</h2>
-      <p>Türkiye’de yaşayan yabancılar için sağlık güvencesi.</p>
+      <p>Türkiye'de yaşayan yabancılar için sağlık güvencesi.</p>
       <a href="https://wa.me/905050705500" target="_blank" class="whatsapp-info-button"
         onclick="return confirmWhatsapp('Yabancı Sağlık Sigortası')">
-        💬 WhatsApp’tan Bilgi Al
+        💬 WhatsApp'tan Bilgi Al
       </a>
       </button>
       <button class="teklif-al-button" onclick="openTeklifForm('Yabancı Sağlık Sigortası')">📄 Teklif Al</button>
@@ -142,7 +149,7 @@
 
   <script>
     function openWhatsapp(urun) {
-      alert(`${urun} hakkında bilgi almak için WhatsApp’a yönlendiriliyorsunuz.`);
+      alert(`${urun} hakkında bilgi almak için WhatsApp'a yönlendiriliyorsunuz.`);
       setTimeout(() => window.open("https://wa.me/905050705500", "_blank"), 800);
     }
 
@@ -271,8 +278,37 @@
   }
 
   function confirmWhatsapp(urun) {
-    return confirm(`${urun} hakkında bilgi almak için WhatsApp’a yönlendirileceksiniz. Onaylıyor musunuz?`);
+    return confirm(`${urun} hakkında bilgi almak için WhatsApp'a yönlendirileceksiniz. Onaylıyor musunuz?`);
   }
+
+  function toggleMobileMenu() {
+    const menu = document.getElementById("mobileMenu");
+    const toggle = document.querySelector(".mobile-menu-toggle");
+    
+    menu.classList.toggle("active");
+    toggle.classList.toggle("active");
+  }
+
+  // Close mobile menu when clicking on a link
+  document.querySelectorAll('.menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      const menu = document.getElementById("mobileMenu");
+      const toggle = document.querySelector(".mobile-menu-toggle");
+      menu.classList.remove("active");
+      toggle.classList.remove("active");
+    });
+  });
+
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (e) => {
+    const menu = document.getElementById("mobileMenu");
+    const toggle = document.querySelector(".mobile-menu-toggle");
+    
+    if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+      menu.classList.remove("active");
+      toggle.classList.remove("active");
+    }
+  });
 </script>
 
 <footer>
