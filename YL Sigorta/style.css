@@ -779,8 +779,9 @@ nav ul li a:hover {
         padding: 60px 0 30px;
     }
 
-    .content h1 {
+    #sari, #lacivert {
         margin-top: 10px;
+        display: inline-block;
     }
 
     .content .links {
@@ -847,7 +848,11 @@ nav ul li a:hover {
 
     .content h1 {
         font-size: 2rem;
+    }
+    
+    #sari, #lacivert {
         margin-top: 15px;
+        display: inline-block;
     }
 
     .content p {
