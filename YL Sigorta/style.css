@@ -45,7 +45,7 @@ header {
     backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1001;
     background: rgba(0, 0, 0, 0.1);
 }
 
@@ -142,7 +142,7 @@ nav ul li a:hover {
     flex-direction: column;
     cursor: pointer;
     gap: 4px;
-    z-index: 1001;
+    z-index: 1003;
 }
 
 .mobile-menu-toggle span {
@@ -738,6 +738,7 @@ nav ul li a:hover {
 
     .mobile-menu-toggle {
         display: flex;
+        z-index: 1003;
     }
 
     nav .menu {
@@ -753,7 +754,7 @@ nav ul li a:hover {
         align-items: center;
         padding-top: 50px;
         transition: var(--transition);
-        z-index: 999;
+        z-index: 1002;
     }
 
     nav .menu.active {
