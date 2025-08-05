@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Görüntüleyici</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #667eea;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .file-input {
+            margin: 20px 0;
+            padding: 10px;
+            border: 2px dashed #667eea;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Excel Dosyası Görüntüleyici</h1>
+        <div class="file-input">
+            <input type="file" id="fileInput" accept=".xlsx,.xls" />
+            <p>Egitim_Listesi.xlsx dosyasını seçin</p>
+        </div>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const data = new Uint8Array(e.target.result);
+                    const workbook = XLSX.read(data, {type: 'array'});
+                    const sheetName = workbook.SheetNames[0];
+                    const worksheet = workbook.Sheets[sheetName];
+                    const jsonData = XLSX.utils.sheet_to_json(worksheet, {header: 1});
+                    
+                    displayData(jsonData);
+                };
+                reader.readAsArrayBuffer(file);
+            }
+        });
+
+        function displayData(data) {
+            const output = document.getElementById('output');
+            if (data.length === 0) {
+                output.innerHTML = '<p>Veri bulunamadı</p>';
+                return;
+            }
+
+            let html = '<h2>Excel Verileri</h2>';
+            html += '<table>';
+            
+            // Başlık satırı
+            html += '<tr>';
+            for (let i = 0; i < data[0].length; i++) {
+                html += `<th>Sütun ${i + 1}</th>`;
+            }
+            html += '</tr>';
+            
+            // Veri satırları
+            data.forEach((row, index) => {
+                html += '<tr>';
+                for (let i = 0; i < data[0].length; i++) {
+                    html += `<td>${row[i] || ''}</td>`;
+                }
+                html += '</tr>';
+            });
+            
+            html += '</table>';
+            
+            // JSON formatında da göster
+            html += '<h3>JSON Formatı</h3>';
+            html += '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+            
+            output.innerHTML = html;
+        }
+    </script>
+</body>
+</html> 
